@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1 class="difference"></h1>
+    <h2 class="time"></h2>
+<script>
+    const now = new Date();
+    const diff = now.getTimezoneOffset()
+    const disp = now.toString()
+    const time = document.querySelector('.time')
+    const difference = document.querySelector('.difference')
+    time.textContent = disp
+    difference.textContent = diff
+
+</script>
+</body>
+
+</html>
